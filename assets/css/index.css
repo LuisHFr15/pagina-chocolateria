@@ -1,0 +1,11 @@
+.header {
+    padding: 30px;
+    text-align: center;
+    background: #931834;
+    color: #f3e4d8;
+    font-size: 30px;
+}
+
+.header-title{
+    text-align: left;
+}
