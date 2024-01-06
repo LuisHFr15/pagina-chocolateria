@@ -3,26 +3,79 @@
     <head>
         <link rel="stylesheet" type="text/css" href="./assets/css/index.css">
         <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
-        <link href='https://fonts.googleapis.com/css?family=Lexend' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend&family=Signika:wght@700&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Chocolateria da Isa</title>
+        <script type="text/javascript" src="./assets/js/carrossel.js"></script>
     </head>
 
-    <body id="corpo">
-        <header class="cabecalho">
-            <img>
+    <body>
+        <header id="cabecalho">
+            <img id="logo" alt="Logo da Chocolateria da Isa">
             <div id="navegacao">
-                <a class="item_navegacao">Nossa História</a>
-                <a class="item_navegacao">Onde Estamos</a>
-                <a class="item_navegacao">Cardápios</>
-                <a class="item_navegacao">Contate-nos</a>
+                <a href="#" class="item_navegacao">Nossa História</a>
+                <a href="#" class="item_navegacao">Onde Estamos</a>
+                <a href="#" class="item_navegacao">Cardápios</>
+                <a href="#" class="item_navegacao">Contate-nos</a>
                 </div>
         </header>
         
 
         <main>
+            <div class="container">
+                <div class="slide-container active">
+                    <div class="slide">
+                        <div class="image">
+                            <img src="./assets/images/chocolateria/Foto1.jpeg" alt="Imagem de uma chocolateria confortável, vista direta para o balcão com poucas mesas, dispostas no local, sendo um ambiente agradável de se estar. Detalhes de borboletas estão presentes no local, assim como quadros de seus bolos mais queridos pelos clientes: um bolo de ninho com morango, e dois bolos de brigadeiro.">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide-container">
+                    <div class="slide">
+                        <div class="content">
+                            <h3>Você sempre quis estar aqui!</h3>
+                            <p>Apenas não descobriu ainda...</p>
+                        </div>
+
+                        <div class="image">
+                            <img src="./assets/images/chocolateria/Foto1Blur.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide-container">
+                    <div class="slide">
+                        <div class="image">
+                            <img src="./assets/images/chocolateria/Foto2.jpeg" alt="Imagem de outro canto da mesma chocolateria, desta vez mostrando o canto agradável com um sofá bem acolchoado abaixo da logo da chocolateria, um ambiente muito bem iluminado e decorado para se descansar caso não queira sentar nas mesas">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide-container">
+                    <div class="slide">
+                        <div class="content">
+                            <h3>Um ambiente bem climatizado, confortável e agradável de se estar.</h3>
+                            <p>Simplesmente a melhor escolha para o seu dia!</p>
+                        </div>
+
+                        <div class="image">
+                            <img src="./assets/images/chocolateria/Foto2Blur.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="prev" onclick="prev()"> </div>
+                <div id="next" onclick="next()"> </div>
+
+            </div>
+            
+
+
         </main>
 
 
