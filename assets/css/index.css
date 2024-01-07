@@ -10,15 +10,22 @@ html {
 }
 
 header {
-    background: #931834;
+    background: #b01c40;
     position: fixed;
     height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 2;
     border-radius: 0px 0px 40px 40px;
     box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.25);
+}
+
+#logo {
+    height: 70px;
 }
 
 #cabecalho {
@@ -76,7 +83,7 @@ header {
     bottom: 40%;
     z-index: 20;
     color: white;
-    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -87,6 +94,7 @@ header {
 .carousel-content h2 {
     font-family: "Signika" sans-serif;
     font-weight: bolder;
+    text-transform: capitalize;
     position: relative;
     color: #C32E42;
     font-size: 56px;
@@ -114,6 +122,33 @@ header {
     0% {
         opacity: 0;
         transform: translateY(50px);
+    }
+}
+
+#identificador {
+    width: 100%;
+    position: relative;
+}
+
+#seta {
+    width: 51px;
+    height: 45px;
+    background-image: url('../images/icones/seta.png');
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    animation:seta-baixo 0.5s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes seta-baixo {
+    0% {
+        top: 0px;
+    }
+    100% {
+        top: 20px;
     }
 }
 
@@ -241,7 +276,7 @@ header {
     margin-top: 100px;
     animation:fade-in-basic linear;
     animation-timeline: view();
-    animation-range: cover 0% cover 30%;
+    animation-range: cover 0% cover 40%;
 }
 
 @keyframes fade-in-basic {
@@ -278,20 +313,145 @@ header {
     font-family: 'Lexend';
     font-size: 20px;
     color: #ffffff;
-    text-decoration: none;
     background-color: #C32E42;
     border: none;
     border-radius: 180px;
     padding: 15px 150px;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.12), 0 3px 3px rgba(0, 0, 0, 0.24)
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.25);
 }
 
 #botao-localizacao:hover {
     scale: 1.10;
-    transition: all 0.4s ease;
+    transition: all 0.2s ease;
 }
 
 #botao-localizacao:active {
     background-color: #930c1e;
-    transition: 0.2s linear;
+    transition: 0.1s linear;
+}
+
+#blocos-cardapios {
+    margin-top: 100px;
+    font-family: 'Lexend';
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.secao-cardapio {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 50px 150px;
+    animation:fade-in-pop linear;
+    animation-timeline: view();
+    animation-range: cover 0% cover 20%;
+}
+
+.parte-superior-cardapio {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.subtitulo {
+    color: #6B1924;
+    font-weight: bolder;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.parte-superior-cardapio img {
+    height: 80px;
+}
+
+.btn-cardapio {
+    margin: 40px;
+    height: 45px;
+    padding: 0px 90px;
+    border-radius: 180px;
+    border: none;
+    background-color: #C32E42;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bolder;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn-cardapio:hover {
+    scale: 1.05;
+    transition: 0.1s linear;
+}
+
+.btn-cardapio:active {
+    background-color: #930c1e;
+    transition: 0.05s linear;
+}
+
+#contate-nos {
+    height: 900px;
+    background-color: #6B1924;
+}
+
+.titulo2 {
+    margin-top: 150px;
+    padding-top: 100px;
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    font-size: 100px;
+    color: #ffffff;
+    animation:fade-in-pop 0.4s linear;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+#secao-contato {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    align-items: center;
+    animation:fade-in-basic ease-in-out;
+    animation-range: cover 0% cover 40%;
+    animation-timeline: view();
+}
+
+#secao-contato img {
+    width: 600px;
+}
+
+#textos-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#chamativo-contato {
+    font-family: 'Lexend';
+    text-align: center;
+    color: #ffffff;
+    font-size: 26px;
+}
+
+#imagens-contato {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+#imagens-contato img {
+    height: 60px;
+    width: 60px;
+}
+
+#copyright {
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
 }
