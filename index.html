@@ -5,82 +5,106 @@
         <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lexend&family=Signika:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lexend&family=Signika:wght@700&family=Satisfy&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Chocolateria da Isa</title>
-        <script type="text/javascript" src="./assets/js/carrossel.js"></script>
     </head>
 
     <body>
         <header id="cabecalho">
             <img id="logo" alt="Logo da Chocolateria da Isa">
             <div id="navegacao">
-                <a href="#" class="item_navegacao">Nossa História</a>
-                <a href="#" class="item_navegacao">Onde Estamos</a>
-                <a href="#" class="item_navegacao">Cardápios</>
+                <a href="#carouselExample" class="item_navegacao">Local</a>
+                <a href="#nossa-historia" class="item_navegacao">Nossa História</a>
+                <a href="#onde-estamos" class="item_navegacao">Onde Estamos</a>
+                <a href="#cardapios" class="item_navegacao">Cardápios</>
                 <a href="#" class="item_navegacao">Contate-nos</a>
                 </div>
         </header>
-        
+
 
         <main>
-            <div class="container">
-                <div class="slide-container active">
-                    <div class="slide">
-                        <div class="image">
-                            <img src="./assets/images/chocolateria/Foto1.jpeg" alt="Imagem de uma chocolateria confortável, vista direta para o balcão com poucas mesas, dispostas no local, sendo um ambiente agradável de se estar. Detalhes de borboletas estão presentes no local, assim como quadros de seus bolos mais queridos pelos clientes: um bolo de ninho com morango, e dois bolos de brigadeiro.">
+            <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel" style="border-bottom: 5px solid #C32E42; margin-bottom: 300px">
+                <div class="carousel-inner" style="height: 45em;">
+                    <div class="carousel-item active">
+                        <img src="./assets/images/chocolateria/Foto1.png" class="d-block w-100" alt="Uma chocolateria com visual agradável e simpático, uma vista direta para o as estudas onde estão os doces e salgados. O ambiente é limpo e aconchegante, com pequenas mesas que te convidam a tomar um café e apreciar a decoração simples de borboletas">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="./assets/images/chocolateria/Foto1Blur.png" class="d-block w-100" alt="Você sempre quis vir aqui. Apenas não descobriu!">
+                        <div class="carousel-content">
+                            <h2>Você sempre quis vir aqui!</h2>
+                            <p>Só não descobriu ainda...</p>
                         </div>
                     </div>
-                </div>
 
-                <div class="slide-container">
-                    <div class="slide">
-                        <div class="content">
-                            <h3>Você sempre quis estar aqui!</h3>
-                            <p>Apenas não descobriu ainda...</p>
-                        </div>
-
-                        <div class="image">
-                            <img src="./assets/images/chocolateria/Foto1Blur.png">
-                        </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/chocolateria/Foto2.png" class="d-block w-100" alt="Outra vista da chocolateria, mostrando o canto com um sofá aconchegante debaixo da logo da empresa, com luminárias de borboletas por perto.">
                     </div>
-                </div>
 
-                <div class="slide-container">
-                    <div class="slide">
-                        <div class="image">
-                            <img src="./assets/images/chocolateria/Foto2.jpeg" alt="Imagem de outro canto da mesma chocolateria, desta vez mostrando o canto agradável com um sofá bem acolchoado abaixo da logo da chocolateria, um ambiente muito bem iluminado e decorado para se descansar caso não queira sentar nas mesas">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slide-container">
-                    <div class="slide">
-                        <div class="content">
-                            <h3>Um ambiente bem climatizado, confortável e agradável de se estar.</h3>
+                    <div class="carousel-item">
+                        <img src="./assets/images/chocolateria/Foto2Blur.png" class="d-block w-100" alt="Um lugar confortável, agradável e maravilhoso! A escolha perfeita para o seu dia">
+                        <div class="carousel-content">
+                            <h2>Confortável, agradável e climatizado.</h2>
                             <p>Simplesmente a melhor escolha para o seu dia!</p>
                         </div>
-
-                        <div class="image">
-                            <img src="./assets/images/chocolateria/Foto2Blur.png">
-                        </div>
                     </div>
                 </div>
 
-                <div id="prev" onclick="prev()"> </div>
-                <div id="next" onclick="next()"> </div>
-
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            
+        
 
+            <section id="nossa-historia">
+                <h1 class="titulo">Nossa História</h1>
+                <div id="isa">
+                    <img id="imagem-isa" src="./assets/images/chocolateria/Isa.png" alt="Foto da criadora da marca, Isabela Fernandes Rodrigues sorrindo tomando um café, com uma edição de uma bela coroa brilhante sobre a sua cabeça.">
+                    <p>TEXTO ISA</p>
+                </div>
+                <div id="doce">
+                    <p>TEXTO COMO COMEÇOU</p>
+                    <img id="imagem-doce" src="./assets/images/chocolateria/doce.png" alt="Foto de um copinho de frutas vermelhas, um doce refrescante e delicioso que contém morango, mirtilo e cereja, além de um creme de ninho único.">
+                </div>
+            </section>
 
+            <section id="onde-estamos">
+                <h1 class="titulo">Onde Estamos</h1>
+
+                <div class="localizacao">
+                    <img alt="Entrada da Chocolateria da Isa">
+                    <div class="descreve-localizacao">
+                        <p>Estamos localizados na Avenida Antonio Frederico <br>
+                            nº 2190. <br>
+                            Bairro Jardim Universitário <br>
+                            <br>
+                        Pontos de referência: <br>
+                        Em frente ao Colégio Celtas, perto da Rodovia Euclides da Cunha.</p>
+                        
+                        <a href="https://www.google.com.br/maps/place/Chocolateria+da+Isa/@-20.4151091,-49.960256,17z/data=!3m1!4b1!4m6!3m5!1s0x94bd5985c33ecc01:0xf5e5d15c964caf11!8m2!3d-20.4151141!4d-49.9576811!16s%2Fg%2F11pcnfwfq1?entry=ttu" target="_blank"><button id="botao-localizacao">Venha até nós!</button></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="cardapios">
+                <h1 class="titulo">Cardápios</h1>
+            </section>
         </main>
 
 
         <footer>
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 
 </html>
