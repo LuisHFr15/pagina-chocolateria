@@ -15,38 +15,40 @@
 
     <body>
         <header id="cabecalho">
-            <img src="./assets/images/chocolateria/logo.png" id="logo" alt="Logo da Chocolateria da Isa">
-            <div id="navegacao">
-                <a href="#carouselExample" class="item_navegacao">Local</a>
-                <a href="#nossa-historia" class="item_navegacao">Nossa História</a>
-                <a href="#onde-estamos" class="item_navegacao">Onde Estamos</a>
-                <a href="#cardapios" class="item_navegacao">Cardápios</>
-                <a href="#contate-nos" class="item_navegacao">Contate-nos</a>
-                </div>
+            <a href="/"><img src="./assets/images/chocolateria/logo.png" id="logo-cabecalho" alt="Logo da Chocolateria da Isa"></a>
+            <nav id="navegacao">
+                <ul id="navegacao-lista">
+                    <li class="navegacao-item"><a href="#" class="navegacao-link">Home</a></li>
+                    <li class="navegacao-item"><a href="#nossa-historia" class="navegacao-link">Nossa História</a></li>
+                    <li class="navegacao-item"><a href="#onde-estamos" class="navegacao-link">Onde Estamos</a></li>
+                    <li class="navegacao-item"><a href="#cardapios" class="navegacao-link">Cardápios</a></li>
+                    <li class="navegacao-item"><a href="#contate-nos" class="navegacao-link">Contate-nos</a></li>
+                </ul>
+            </nav>
         </header>
 
 
         <main>
-            <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel" style="box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25); border-bottom: 5px solid #C32E42; margin-bottom: 150px">
+            <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./assets/images/chocolateria/Foto1.png" class="d-block w-100" alt="Uma chocolateria com visual agradável e simpático, uma vista direta para o as estudas onde estão os doces e salgados. O ambiente é limpo e aconchegante, com pequenas mesas que te convidam a tomar um café e apreciar a decoração simples de borboletas">
+                    <div class="carousel-item carousel-image bg-img-1 active">
+                        <img src="./assets/images/chocolateria/Foto1.png" class="d-block w-100 hidden" alt="Uma chocolateria com visual agradável e simpático, uma vista direta para as estufas onde estão os doces e salgados. O ambiente é limpo e aconchegante, com pequenas mesas que te convidam a tomar um café e apreciar a decoração simples de borboletas">
                     </div>
 
-                    <div class="carousel-item">
-                        <img src="./assets/images/chocolateria/Foto1Blur.png" class="d-block w-100" alt="Você sempre quis vir aqui. Apenas não descobriu!">
+                    <div class="carousel-item carousel-image bg-img-2">
+                        <img src="./assets/images/chocolateria/Foto1Blur.png" class="d-block w-100 hidden" alt="Você sempre quis vir aqui. Apenas não descobriu!">
                         <div class="carousel-content">
                             <h2>Você sempre quis vir aqui!</h2>
                             <p>Só não descobriu ainda...</p>
                         </div>
                     </div>
 
-                    <div class="carousel-item">
-                        <img src="./assets/images/chocolateria/Foto2.png" class="d-block w-100" alt="Outra vista da chocolateria, mostrando o canto com um sofá aconchegante debaixo da logo da empresa, com luminárias de borboletas por perto.">
+                    <div class="carousel-item carousel-image bg-img-3">
+                        <img src="./assets/images/chocolateria/Foto2.png" class="d-block w-100 hidden" alt="Outra vista da chocolateria, mostrando o canto com um sofá aconchegante debaixo da logo da empresa, com luminárias de borboletas por perto.">
                     </div>
 
-                    <div class="carousel-item">
-                        <img src="./assets/images/chocolateria/Foto2Blur.png" class="d-block w-100" alt="Um lugar confortável, agradável e maravilhoso! A escolha perfeita para o seu dia">
+                    <div class="carousel-item carousel-image bg-img-4">
+                        <img src="./assets/images/chocolateria/Foto2Blur.png" class="d-block w-100 hidden" alt="Um lugar confortável, agradável e maravilhoso! A escolha perfeita para o seu dia">
                         <div class="carousel-content">
                             <h2>Confortável, agradável e climatizado.</h2>
                             <p>Simplesmente a melhor escolha para o seu dia!</p>
@@ -73,12 +75,12 @@
             <section id="nossa-historia">
                 <h1 class="titulo">Nossa História</h1>
                 <div id="isa">
-                    <img id="imagem-isa" src="./assets/images/chocolateria/Isa.png" alt="Foto da criadora da marca, Isabela Fernandes Rodrigues sorrindo tomando um café, com uma edição de uma bela coroa brilhante sobre a sua cabeça.">
+                    <img id="imagem-isa" src="./assets/images/chocolateria/Isa.png" alt="Criadora da marca, Isabela Fernandes Rodrigues sorrindo tomando um café, com uma edição de uma bela coroa brilhante sobre a sua cabeça.">
                     <p>TEXTO ISA</p>
                 </div>
                 <div id="doce">
                     <p>TEXTO COMO COMEÇOU</p>
-                    <img id="imagem-doce" src="./assets/images/chocolateria/doce.png" alt="Foto de um copinho de frutas vermelhas, um doce refrescante e delicioso que contém morango, mirtilo e cereja, além de um creme de ninho único.">
+                    <img id="imagem-doce" src="./assets/images/chocolateria/doce.png" alt="Copinho de frutas vermelhas, um doce refrescante e delicioso que contém morango, mirtilo e cereja, além de um creme de ninho único.">
                 </div>
             </section>
 
@@ -89,9 +91,9 @@
                 <div class="localizacao">
                     <img alt="Entrada da Chocolateria da Isa">
                     <div class="descreve-localizacao">
-                        <p>Estamos localizados na Avenida Antonio Frederico <br>
-                            nº 2190. <br>
+                        <p>Estamos localizados na Avenida Antonio Frederico nº 2190. <br>
                             Bairro Jardim Universitário <br>
+                            Votuporanga, São Paulo <br>
                             <br>
                         Pontos de referência: <br>
                         Em frente ao Colégio Celtas, perto da Rodovia Euclides da Cunha.</p>
@@ -103,40 +105,40 @@
 
 
             <section id="cardapios">
-                <h1 class="titulo">Cardápios</h1>
+                <h2 class="titulo">Cardápios</h2>
                 <div id="blocos-cardapios">
                     <div class="secao-cardapio">
                         <div class="parte-superior-cardapio">
-                            <h2 class="subtitulo">Cardápio de Natal</h2>
-                            <img src="./assets/images/icones/natal.png" alt="Pequeno desenho de árvore de Natal">
+                            <h3 class="subtitulo">Cardápio de Natal</h3>
+                            <img src="./assets/images/icones/natal.png" alt="Árvore de Natal">
                         </div>
                         <a href="https://drive.google.com/file/d/1gtZnmrJWAU9mjin65TcW-kLcMWA9_Mnn/view" target="_blank"><button class="btn-cardapio">Conhecer</button></a>
                     </div>
                     <div class="secao-cardapio">
                         <div class="parte-superior-cardapio">
-                            <h2 class="subtitulo">Cardápio de Bolos</h2>
-                            <img src="./assets/images/icones/cake.png" alt="Pequeno desenho de um bolo">
+                            <h3 class="subtitulo">Cardápio de Bolos</h3>
+                            <img src="./assets/images/icones/cake.png" alt="Bolo">
                         </div>
                         <a href="https://drive.google.com/file/d/1Cei368l51VFYNNLvvnFHAXO5sTLbNR5g/view" target="_blank"><button class="btn-cardapio">Conhecer</button></a>
                     </div>
                     <div class="secao-cardapio">
                         <div class="parte-superior-cardapio">
-                            <h2 class="subtitulo">Cardápio de Sobremesas</h2>
-                            <img src="./assets/images/icones/sweet.png" alt="Pequeno desenho de um brigadeiro">
+                            <h3 class="subtitulo">Cardápio de Sobremesas</h3>
+                            <img src="./assets/images/icones/sweet.png" alt="Brigadeiro">
                         </div>
                         <a href="https://drive.google.com/file/d/19JwkQUPYvmxQ95jr8VFXXPQ2lGnvPToZ/view" target="_blank"><button class="btn-cardapio">Conhecer</button></a>
                     </div>
                     <div class="secao-cardapio">
                         <div class="parte-superior-cardapio">
-                            <h2 class="subtitulo">Cardápio de Refeições</h2>
-                            <img src="./assets/images/icones/lunch.png" alt="Pequeno desenho de uma bandeija de garçom com tampa">
+                            <h3 class="subtitulo">Cardápio de Refeições</h3>
+                            <img src="./assets/images/icones/lunch.png" alt="Bandeja de garçom com tampa">
                         </div>
                         <a href="https://drive.google.com/file/d/1a526z8E5nAH61QjeZ40NvAA07YNMmN4f/view" target="_blank"><button class="btn-cardapio">Conhecer</button></a>
                     </div>
                     <div class="secao-cardapio">
                         <div class="parte-superior-cardapio">
-                            <h2 class="subtitulo">Cardápio de Personalizados</h2>
-                            <img src="./assets/images/icones/easter.png">
+                            <h3 class="subtitulo">Cardápio de Personalizados</h3>
+                            <img src="./assets/images/icones/personalizados.png" alt="Lista de desejos com um coração">
                         </div>
                         <a href="https://drive.google.com/file/d/1BKJ0yYKw2qbKgq1XlgUVeIwIaLjbcnJP/view" target="_blank"><button class="btn-cardapio">Conhecer</button></a>
                     </div>
@@ -151,22 +153,25 @@
                 <div id="secao-contato">
                     <img src="./assets/images/chocolateria/logo.png" alt="Logo da Chocolateria da Isa">
                     <div id="textos-contato">
-                        <p id="chamativo-contato">Gostou? <br>
-                            Então vem com a gente!</p>
+                        <header><strong>Gostou? <br>
+                            Então vem com a gente!</strong></header>
+                        <p>De segunda a Sexta das 7h às 18:30 <br>
+                            E de Sábado das 8h às 18h</p>
                         <div id="imagens-contato">
-                            <img src="./assets/images/icones/whatsapp.png" alt="Fazer contato pelo Whatsapp">
-                            <img src="./assets/images/icones/instagram.png" alt="Fazer contato pelo Instagram">
-                            <img src="./assets/images/icones/facebook.png" alt="Fazer contato pelo Facebook">
-                            <img src="./assets/images/icones/ifood.png" alt="Fazer pedido pelo Ifood">
+                            <a href="https://wa.me/message/HSJOPPU53LBUN1" target="_blank"><img src="./assets/images/icones/whatsapp.png" alt="Fazer contato pelo Whatsapp"></a>
+                            <a href="https://www.instagram.com/chocolateria_da_isa/" target="_blank"><img src="./assets/images/icones/instagram.png" alt="Fazer contato pelo Instagram"></a>
+                            <a href="https://www.facebook.com/chocolateriadaisa" target="_blank"><img src="./assets/images/icones/facebook.png" alt="Fazer contato pelo Facebook"></a>
+                            <a href="https://www.ifood.com.br/delivery/votuporanga-sp/chocolateria-da-isa-jardim-universitario/c5be6549-8e4d-41bb-9be5-95ecf92b6ea1" target="_blank"><img src="./assets/images/icones/ifood.png" alt="Fazer pedido pelo Ifood"></a>
                         </div>
-                        <p id="copyright">
-                            ©2024 Chocolateria da Isa
-                        </p>
+                        <footer>
+                            © 2024 Chocolateria da Isa
+                        </footer>
                     </div>
                 </div>
             </section>
         </footer>
 
+        <script defer src="./assets/js/navbar.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 

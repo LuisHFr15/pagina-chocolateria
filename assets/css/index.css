@@ -2,29 +2,27 @@ body {
     background-image: url(../images/backgrounds/background.png);
     background-position: center;
     background-size: cover;
-    height: 2000px;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-header {
+body > header {
     background: #b01c40;
     position: fixed;
-    height: 80px;
+    height: 9vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    top: 0;
-    left: 0;
     width: 100%;
     z-index: 2;
     border-radius: 0px 0px 40px 40px;
     box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.25);
+    padding: 0 15vh;
 }
 
-#logo {
+#logo-cabecalho {
     height: 70px;
 }
 
@@ -32,32 +30,32 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-}
-
-#logo {
-    margin-left: 150px;
 }
 
 #navegacao {
     box-sizing: border-box;
-    margin-right: 150px;
 }
 
-.item_navegacao {
+#navegacao-lista {
+    list-style: none;
+    display: flex;
+    justify-content: center;
     font-family: "Lexend";
     text-align: center;
-    font-size: 16px;
+    gap: 2vw;
+}
+
+.navegacao-link {
+    font-size: 1rem;
     font-weight: bold;
     padding: 0px 7px;
-    margin: 0px 11px;
-    color: #e3e3e3;
     text-decoration: none;
+    color: #e3e3e3;
     position: relative;
     letter-spacing: 0.5px;
 }
 
-.item_navegacao:after {
+.navegacao-link:after {
     content: "";
     position: absolute;
     background-color: #ffffff;
@@ -69,12 +67,53 @@ header {
     transition: 0.4s;
 }
 
-.item_navegacao:hover {
+.navegacao-link:hover {
     color: #ffffff;
 }
 
-.item_navegacao:hover:after {
+.navegacao-link:hover:after {
     width: 100%;
+}
+
+#carouselExample {
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+    border-bottom: 5px solid #C32E42;
+    margin-bottom: 15vh;
+    width: 100%;
+}
+
+.bg-img-1 {
+    background-image: url('../images/chocolateria/Foto1.png');
+}
+
+.bg-img-2 {
+    background-image: url('../images/chocolateria/Foto1Blur.png');
+}
+
+.bg-img-3 {
+    background-image: url('../images/chocolateria/Foto2.png');
+}
+
+.bg-img-4 {
+    background-image: url('../images/chocolateria/Foto2Blur.png');
+}
+
+.carousel-image {
+    height: 75vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
 .carousel-content {
@@ -97,7 +136,7 @@ header {
     text-transform: capitalize;
     position: relative;
     color: #C32E42;
-    font-size: 56px;
+    font-size: 3.5rem;
     padding-bottom: 20px;
     animation:carouselCatching 0.4s linear 0.6s backwards;
 }
@@ -114,7 +153,7 @@ header {
     font-family: "Lexend";
     color: #ffffff;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 1.375rem;
     animation:carouselSubtext 2s 1.3s backwards;
 }
 
@@ -128,6 +167,7 @@ header {
 #identificador {
     width: 100%;
     position: relative;
+    margin-bottom: 20vh;
 }
 
 #seta {
@@ -157,7 +197,7 @@ header {
     padding-top: 100px;
     text-align: center;
     font-family: 'Satisfy', cursive;
-    font-size: 100px;
+    font-size: 6.25rem;
     color: #931834;
     animation:fade-in-pop 0.4s linear;
     animation-timeline: view();
@@ -184,12 +224,13 @@ header {
     margin: 60px 0;
     display: flex;
     justify-content: space-between;
+    gap: 10vw;
     align-items: center;
     width: 100%;
 }
 
 #imagem-isa {
-    margin-left: 150px;
+    margin-left: 12vw;
     animation:fade-in-left linear;
     animation-timeline: view();
     animation-range: cover 0% cover 20%;
@@ -205,7 +246,7 @@ header {
     background: #C32E42;
     border-radius: 180px 0px 0px 180px;
     font-family: "Lexend";
-    font-size: 22px;
+    font-size: 1.375rem;
     color: #ffffff;
     animation:fade-in-right linear;
     animation-timeline: view();
@@ -216,11 +257,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10vw;
     width: 100%;
 }
 
 #imagem-doce {
-    margin-right: 150px;
+    margin-right: 12vw;
     animation:fade-in-right linear;
     animation-timeline: view();
     animation-range: cover 0% cover 20%;
@@ -236,7 +278,7 @@ header {
     background: #C32E42;
     border-radius: 0px 180px 180px 0px;
     font-family: "Lexend";
-    font-size: 22px;
+    font-size: 1.375rem;
     color: #ffffff;
     animation:fade-in-left linear;
     animation-timeline: view();
@@ -274,6 +316,7 @@ header {
     width: 100%;
     height: 580px;
     margin-top: 100px;
+    align-items: center;
     animation:fade-in-basic linear;
     animation-timeline: view();
     animation-range: cover 0% cover 40%;
@@ -303,7 +346,7 @@ header {
 
 .descreve-localizacao p {
     font-family: 'Lexend';
-    font-size: 22px;
+    font-size: 1.375rem;
     color: #ffffff;
     text-align: center;
     font-weight: 100;
@@ -311,7 +354,7 @@ header {
 
 #botao-localizacao {
     font-family: 'Lexend';
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #ffffff;
     background-color: #C32E42;
     border: none;
@@ -360,7 +403,7 @@ header {
 .subtitulo {
     color: #6B1924;
     font-weight: bolder;
-    font-size: 28px;
+    font-size: 1.75rem;
     letter-spacing: 0.5px;
     text-align: center;
 }
@@ -377,7 +420,7 @@ header {
     border: none;
     background-color: #C32E42;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: bolder;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -402,7 +445,7 @@ header {
     padding-top: 100px;
     text-align: center;
     font-family: 'Satisfy', cursive;
-    font-size: 100px;
+    font-size: 6.25rem;
     color: #ffffff;
     animation:fade-in-pop 0.4s linear;
     animation-timeline: view();
@@ -414,7 +457,7 @@ header {
     margin-top: 100px;
     display: flex;
     justify-content: center;
-    gap: 150px;
+    gap: 15vw;
     align-items: center;
     animation:fade-in-basic ease-in-out;
     animation-range: cover 0% cover 40%;
@@ -422,7 +465,7 @@ header {
 }
 
 #secao-contato img {
-    width: 600px;
+    width: 450px;
 }
 
 #textos-contato {
@@ -431,11 +474,19 @@ header {
     gap: 50px;
 }
 
-#chamativo-contato {
+#textos-contato > header {
     font-family: 'Lexend';
     text-align: center;
     color: #ffffff;
-    font-size: 26px;
+    font-size: 1.625rem;
+}
+
+#textos-contato > p {
+    font-family: 'Lexend';
+    text-align: center;
+    color: #ffffff;
+    font-weight: 18px;
+    font-size: 1.25rem;
 }
 
 #imagens-contato {
@@ -450,8 +501,22 @@ header {
     width: 60px;
 }
 
-#copyright {
-    font-size: 14px;
+#textos-contato > footer {
+    margin-top: 20px;
+    font-size: 0.75rem;
     color: #ffffff;
     text-align: center;
+}
+
+#developed {
+    margin-top: 10vh;
+    font-size: 1rem;
+    text-align: center;
+    color: #e3e3e3;
+}
+
+@media screen and (max-width: 1300px) {
+    body > header {
+        border-radius: 0;
+    }
 }
