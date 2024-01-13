@@ -1,0 +1,18 @@
+<IfModule mod_expires.c>
+  ExpiresActive On
+ # Images
+  ExpiresByType image/png "access 1 year"
+  ExpiresByType image/webp "access 1 year"
+  # Fonts
+  ExpiresByType font/ttf "access 1 month"
+  ExpiresByType font/otf "access 1 month"
+  ExpiresByType font/woff "access 1 month"
+  ExpiresByType font/woff2 "access 1 month"
+  ExpiresByType application/font-woff "access 1 month"
+  ExpiresByType application/font-woff2 "access 1 month"
+
+  # CSS, JavaScript
+  ExpiresByType text/css "access 1 month"
+  ExpiresByType text/javascript "access 1 month"
+  ExpiresByType application/javascript "access 1 month"
+</IfModule>

@@ -1,61 +1,62 @@
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth
 }
 
 * {
-    font-family: 'Comfortaa';
+    font-family: Comfortaa
 }
 
 body {
-    background-image: url('../images/backgrounds/background.png');
-    background-size: cover;
+    background-image: url(https://chocolateriadaisa.com.br/assets/images/backgrounds/background.webp);
+    background-size: cover
 }
 
 .navbar {
     background-color: #b01c40;
     top: 0;
-    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 7px 7px rgba(0, 0, 0, .25)
 }
 
 .navbar-brand img {
-    height: 3.5rem;
+    height: 3.5rem
 }
 
 .navbar-nav a {
-    color: #ffffff;
+    color: #fff
 }
 
 .carousel-container {
     margin-top: 82px;
-    box-shadow: 0 7px 9px rgba(0, 0, 0, 0.25);
-    margin-bottom: 25vh;
+    box-shadow: 0 7px 9px rgba(0, 0, 0, .25);
+    margin-bottom: 25vh
 }
 
 .carousel-inner {
-    border-bottom: 0.6vh solid #C32E42;
+    border-bottom: .6vh solid #c32e42
 }
 
 .bg-img-1 {
-    background-image: url('../images/chocolateria/Photo1.png');
+    background-image: url(https://chocolateriadaisa.com.br/assets/images/chocolateria/Photo1.webp)
 }
 
 .bg-img-2 {
-    background-image: url('../images/chocolateria/Photo1Blur.png');
+    background-image: url(https://chocolateriadaisa.com.br/assets/images/chocolateria/Photo1Blur.webp)
 }
 
 .bg-img-3 {
-    background-image: url('../images/chocolateria/Photo2.png');
+    background-image: url(https://chocolateriadaisa.com.br/assets/images/chocolateria/Photo2.webp)
 }
 
 .bg-img-4 {
-    background-image: url('../images/chocolateria/Photo2Blur.png');
+    background-image: url(https://chocolateriadaisa.com.br/assets/images/chocolateria/Photo2Blur.webp)
 }
 
 .carousel-image {
+    width: auto;
     height: 50vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center
 }
 
 .hidden {
@@ -66,203 +67,204 @@ body {
     margin: -1px;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
-    border: 0;
+    border: 0
 }
 
 #arrow-id {
     width: 100%;
     height: 2.75rem;
-    position: relative;
+    position: relative
 }
 
 #arrow {
     height: 2.75rem;
     width: 3.125rem;
-    background-image: url('../images/icons/arrow.png');
+    background-image: url(https://chocolateriadaisa.com.br/assets/images/icons/arrow.webp);
     background-size: contain;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-
-    animation:downArrow 0.5s ease-in-out;
+    animation: downArrow .5s ease-in-out;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation-direction: alternate
 }
 
 @keyframes downArrow {
     0% {
-        top: 0px;
+        top: 0
     }
     100% {
-        top: 20px;
+        top: 20px
     }
 }
 
 .title {
-    font-family: 'Sacramento', cursive;
+    font-family: Sacramento, cursive;
     font-size: 5rem;
     color: #931834;
     font-weight: 500;
     text-align: center;
-
-    animation:fadeInBasic 1ms linear;
+    animation: fadeInBasic 1ms linear;
     animation-timeline: view();
-    animation-range: cover 0% cover 30%;
+    animation-range: cover 0 cover 30%
 }
 
 @keyframes fadeInBasic {
     0% {
-        opacity: 0;
+        opacity: 0
     }
     100% {
-        opacity: 1;
+        opacity: 1
     }
 }
 
 @keyframes fadeInPop {
     0% {
-        opacity: 0%;
+        opacity: 0
     }
     80% {
         opacity: 1;
-        scale: 1.1;
+        scale: 1.1
     }
     100% {
-        scale: 1;
+        scale: 1
     }
 }
 
-#nossa-historia, #onde-estamos, #cardapios, #contate-nos {
+#cardapios,
+#contate-nos,
+#nossa-historia,
+#onde-estamos {
     padding-top: 10vh;
     padding-bottom: 15vh;
     width: 100%;
-
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 10vh;
-    align-items: center;
+    align-items: center
 }
 
 .history {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 8vh;
+    gap: 8vh
 }
 
-#image-isa, #image-candy {
+#image-candy,
+#image-isa {
     width: 40vw;
-    animation:fadeInPop 1ms ease-out;
+    height: auto;
+    animation: fadeInPop 1ms ease-out;
     animation-timeline: view();
-    animation-range: cover 0% cover 30%;
+    animation-range: cover 0 cover 30%
 }
 
 .isa {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 50px
 }
 
 .candy {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    gap: 50px;
+    gap: 50px
 }
 
-.isa p, .candy p {
+.candy p,
+.isa p {
     display: flex;
     justify-content: flex-start;
     width: 60vw;
-    border: 1em solid #C32E42;
+    height: auto;
+    border: 1em solid #c32e42;
     padding-inline: 3vw;
     padding-block: 3vh;
     border-radius: 40px;
-    background-color: #C32E42;
-
-    color: #ffffff;
+    background-color: #c32e42;
+    color: #fff;
     font-weight: 600;
-    font-size: 1.25rem;
+    font-size: 1.25rem
 }
 
 .isa p {
-    animation:fadeInRight 1ms ease-out;
+    animation: fadeInRight 1ms ease-out;
     animation-timeline: view();
-    animation-range: cover 0% cover 30%;
+    animation-range: cover 0 cover 30%
 }
 
 @keyframes fadeInRight {
     0% {
         opacity: 0;
-        transform: translateX(100vw);
+        transform: translateX(100vw)
     }
-
     100% {
-        opacity: 1;
+        opacity: 1
     }
 }
 
 .candy p {
-    animation:fadeInLeft 1ms ease-out;
+    animation: fadeInLeft 1ms ease-out;
     animation-timeline: view();
-    animation-range: cover 0% cover 30%;
+    animation-range: cover 0 cover 30%
 }
 
 @keyframes fadeInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-100vw);
+        transform: translateX(-100vw)
     }
-
     100% {
-        opacity: 1;
+        opacity: 1
     }
 }
 
 .local {
-    animation:fadeInBasic 1ms ease-out;
+    animation: fadeInBasic 1ms ease-out;
     animation-timeline: view();
-    animation-range: cover 0% cover 30%;
+    animation-range: cover 0 cover 30%
 }
 
 .local-photo {
     width: 100vw;
+    height: auto
 }
 
 .local-description {
-    background: #6B1924;
-    color: #ffffff;
+    background: #6b1924;
+    color: #fff;
     font-size: 1.25rem;
     text-align: center;
     padding: 5vh 2vw;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3vh;
+    gap: 3vh
 }
 
 .local-btn {
-    font-family: 'Petrona', serif;
-    color: #ffffff;
-    letter-spacing: 0.075rem;
+    font-family: Petrona, serif;
+    color: #fff;
+    letter-spacing: .075rem;
     text-transform: capitalize;
-    font-weight: bold;
-
+    font-weight: 700;
     border: none;
     text-decoration: none;
     padding: 1vh 15vw;
     border-radius: 180px;
-    background: #C32E42;
-    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.25);
+    background: #c32e42;
+    box-shadow: 0 7px 7px rgba(0, 0, 0, .25)
 }
 
 .local-btn:active {
     background: #f52757;
     scale: 1.05;
-    transition: 0.2s linear;
+    transition: .2s linear
 }
 
 .menus {
@@ -270,7 +272,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    gap: 13vh;
+    gap: 13vh
 }
 
 .menu-section {
@@ -278,19 +280,22 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 4vh;
+    gap: 4vh
 }
 
-#menu1, #menu3, #menu5 {
-    animation:fadeInRight 1ms ease-out;
+#menu1,
+#menu3,
+#menu5 {
+    animation: fadeInRight 1ms ease-out;
     animation-timeline: view();
-    animation-range: cover 0% cover 30%;
+    animation-range: cover 0 cover 30%
 }
 
-#menu2, #menu4 {
-    animation:fadeInLeft 1ms ease-out;
+#menu2,
+#menu4 {
+    animation: fadeInLeft 1ms ease-out;
     animation-timeline: view();
-    animation-range: cover 0% cover 30%;
+    animation-range: cover 0 cover 30%
 }
 
 .menu-superior {
@@ -298,19 +303,21 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 60px;
+    gap: 60px
 }
 
 .menu-title {
     width: 35vw;
+    height: auto;
     text-align: center;
-    font-family: 'Petrona', serif;
+    font-family: Petrona, serif;
     font-size: 2rem;
-    color: #6B1924;
+    color: #6b1924
 }
 
 .menu-superior img {
-    height: 6.5vh;
+    width: auto;
+    height: 6.5vh
 }
 
 .menu-btn {
@@ -318,36 +325,35 @@ body {
     text-decoration: none;
     padding: 1vh 15vw;
     border-radius: 180px;
-    background: #C32E42;
-
+    background: #c32e42;
     font-size: 1.25rem;
-    color: #ffffff;
-    font-weight: bold;
-    letter-spacing: 0.075rem;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: .075rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .25)
 }
 
 .menu-btn:active {
     scale: 1.05;
     background: #f52757;
-    transition: 0.2s linear;
+    transition: .2s linear
 }
 
 #contate-nos {
-    background: #6B1924;
+    background: #6b1924;
     width: 100%;
+    height: auto
 }
 
 .footer-title {
-    font-family: 'Sacramento', cursive;
+    font-family: Sacramento, cursive;
     font-size: 5rem;
-    color: #ffffff;
+    color: #fff;
     font-weight: 500;
     text-align: center;
-
-    animation:fadeInPop 1ms linear;
+    animation: fadeInPop 1ms linear;
     animation-timeline: view();
-    animation-range: cover 0% cover 30%;
+    animation-range: cover 0 cover 30%
 }
 
 .contact-section {
@@ -355,14 +361,15 @@ body {
     flex-direction: column;
     justify-content: space-between;
     gap: 10vh;
-    align-items: center;
+    align-items: center
 }
 
 .footer-logo {
+    width: auto;
     height: 30vh;
-    animation:fadeInBasic 1ms linear;
+    animation: fadeInBasic 1ms linear;
     animation-timeline: view();
-    animation-range: cover 0% cover 30%;
+    animation-range: cover 0 cover 30%
 }
 
 .contact {
@@ -370,7 +377,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 7vh;
+    gap: 7vh
 }
 
 .contact-text {
@@ -379,18 +386,17 @@ body {
     justify-content: space-between;
     gap: 5vh;
     align-items: center;
-
     text-align: center;
-    color: #ffffff;
+    color: #fff
 }
 
 .catchy {
-    font-family: 'Sacramento', cursive;
-    font-size: 3rem;
+    font-family: Sacramento, cursive;
+    font-size: 3rem
 }
 
 .contact-text p {
-    font-size: 1.25rem;
+    font-size: 1.25rem
 }
 
 .footer-images {
@@ -398,131 +404,123 @@ body {
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    height: auto
 }
 
 .footer-link {
-    height: 7vh;
+    width: auto;
+    height: 7vh
 }
 
-
-@media (min-width: 768px) {
+@media (min-width:768px) {
     .navbar {
-        border-radius: 0 0 40px 40px;
+        border-radius: 0 0 40px 40px
     }
-
     .carousel-container {
         margin-top: 0;
+        width: auto;
         height: 80vh;
-        margin-bottom: 12vh;
+        margin-bottom: 12vh
     }
-
     .carousel-image {
-        height: 80vh;
+        width: auto;
+        height: 80vh
     }
-
     .title {
-        font-size: 6.25rem;
+        font-size: 6.25rem
     }
-
     .history {
         gap: 5vh;
         width: 100%;
+        height: auto
     }
-
-    .isa, .candy {
+    .candy,
+    .isa {
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
-        gap: 5vw;
+        height: auto;
+        gap: 5vw
     }
-
     .isa p {
-        border-radius: 180px 0 0 180px;
+        border-radius: 180px 0 0 180px
     }
-
     .candy p {
-        border-radius: 0 180px 180px 0;
+        border-radius: 0 180px 180px 0
     }
-    
-    #image-isa, #image-candy {
-        width: 11%;
-    }
-
+    #image-candy,
     #image-isa {
-        transform: translateX(10vw);
+        width: 11%;
+        height: auto
     }
-
+    #image-isa {
+        transform: translateX(10vw)
+    }
     #image-candy {
-        transform: translateX(-10vw);
+        transform: translateX(-10vw)
     }
-
     .local {
         display: flex;
         flex-direction: row;
         justify-content: stretch;
         width: 100%;
-        height: 63vh;
+        height: 63vh
     }
-
     .local-photo {
         width: 40vw;
+        height: auto
     }
-
     .local-description {
         display: flex;
         justify-content: center;
         gap: 12vh;
         width: 100%;
+        height: auto
     }
-
     .local-btn {
         padding: 1.5vh 8vw;
-        font-size: 1.5rem;
+        font-size: 1.5rem
     }
-
     .local-btn:hover {
         scale: 1.05;
-        transition: 0.2s ease-in-out;
+        transition: .2s ease-in-out
     }
-
     .menus {
         justify-content: space-around;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: wrap
     }
-
     .menu-title {
         width: 15vw;
+        height: auto
     }
-
     .menu-btn {
-        padding: 1vh 7vw;
+        padding: 1vh 7vw
     }
-
     .menu-btn:hover {
         scale: 1.05;
-        transition: 0.2s ease-in-out;
+        transition: .2s ease-in-out
     }
-
-    #menu1, #menu2, #menu3, #menu4, #menu5 {
-        animation:fadeInPop 1ms ease-in-out;
+    #menu1,
+    #menu2,
+    #menu3,
+    #menu4,
+    #menu5 {
+        animation: fadeInPop 1ms ease-in-out;
         animation-timeline: view();
-        animation-range: cover 0% cover 30%;
+        animation-range: cover 0 cover 30%
     }
-
     .contact-section {
         flex-direction: row;
-        animation:fadeInBasic 1ms ease-in-out;
+        animation: fadeInBasic 1ms ease-in-out;
         animation-timeline: view();
-        animation-range: cover 0% cover 30%
+        animation-range: cover 0 cover 30%
     }
-
     .footer-title {
-        font-size: 6.25rem;
+        font-size: 6.25rem
     }
-    
     .footer-logo {
         height: 50vh;
+        width: auto
     }
-    
 }
