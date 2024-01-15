@@ -65,26 +65,40 @@
         <main>
             <div class="carousel-container">
                 <div id="ads" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button class="active" data-bs-target="#ads" data-bs-slide-to="0" style="background-color: #c32e42; padding-block: 1px;"></button>
+                        <button class="" data-bs-target="#ads" data-bs-slide-to="1" style="background-color: #c32e42; padding-block: 1px;"></button>
+                        <button class="" data-bs-target="#ads" data-bs-slide-to="2" style="background-color: #c32e42; padding-block: 1px;"></button>
+                        <button class="" data-bs-target="#ads" data-bs-slide-to="3" style="background-color: #c32e42; padding-block: 1px;"></button>
+                    </div>
                     <div class="carousel-inner">
-                        <div class="carousel-item bg-img-1 carousel-image active">
-                            <picture>
-                                <img class="hidden" src="./assets/images/chocolateria/Photo1.webp" alt="Uma chocolateria com visual agradável e simpático, uma vista direta para as estufas onde estão os doces e salgados. O ambiente é limpo e aconchegante, com pequenas mesas que te convidam a tomar um café e apreciar a decoração simples e bonita de borboletas" class="d-block w-100">
-                            </picture>
+                        <div class="carousel-item carousel-image active">
+                            <div class="d-flex justify-content-center h-100">
+                                <img class="cover-image" src="./assets/images/chocolateria/Photo1.webp" alt="Uma chocolateria com visual agradável e simpático, uma vista direta para as estufas onde estão os doces e salgados. O ambiente é limpo e aconchegante, com pequenas mesas que te convidam a tomar um café e apreciar a decoração simples e bonita de borboletas" class="d-block w-100">
+                            </div>
                         </div>
-                        <div class="carousel-item bg-img-2 carousel-image">
-                            <picture>
-                                <img class="hidden" src="./assets/images/chocolateria/Photo1Blur.webp" alt="Você sempre quis vir aqui. Apenas não descobriu!" class="d-block w-100">
-                            </picture>
+                        <div class="carousel-item carousel-image">
+                            <div class="carousel-content">
+                                <p class="carousel-principal-text"><em>Atendimento e encomendas de qualidade única!</em></p>
+                                <p class="carousel-second-text">Você definitivamente não se arrependeria de experimentar...</p>
+                            </div>
+                            <div class="d-flex justify-content-center h-100">
+                                <img class="cover-image" src="./assets/images/chocolateria/Photo1Blur.webp" alt="Mesma imagem anterior, com efeito borrado" class="d-block w-100">
+                            </div>
                         </div>
-                        <div class="carousel-item bg-img-3 carousel-image">
-                            <picture>
-                                <img class="hidden" src="./assets/images/chocolateria/Photo2.webp" alt="Outra vista da chocolateria, mostrando o canto com um sofá aconchegante debaixo da logo da empresa, com luminárias de borboletas por perto.S" class="d-block w-100">
-                            </picture>
+                        <div class="carousel-item carousel-image">
+                            <div class="d-flex justify-content-center h-100">
+                                <img class="cover-image" src="./assets/images/chocolateria/Photo2.webp" alt="Outra vista da chocolateria, mostrando o canto com um sofá aconchegante debaixo da logo da empresa, com luminárias de borboletas por perto.S" class="d-block w-100">
+                            </div>
                         </div>
-                        <div class="carousel-item bg-img-4 carousel-image">
-                            <picture>
-                                <img class="hidden" src="./assets/images/chocolateria/Photo2Blur.webp" alt="Um lugar confortável, agradável e maravilhoso. A escolha perfeita para o seu dia!" class="d-block w-100">
-                            </picture>
+                        <div class="carousel-item carousel-image">
+                            <div class="carousel-content">
+                                <p class="carousel-principal-text"><em>A melhor escolha para o seu dia está aqui.</em></p>
+                                <p class="carousel-second-text">Para o seu almoço, a sua tarde ou a sua festa, para o que você quiser!</p>
+                            </div>
+                            <div class="d-flex justify-content-center h-100">
+                                <img class="cover-image" src="./assets/images/chocolateria/Photo2Blur.webp" alt="Mesma imagem anterior, com efeito borrado" class="d-block w-100">
+                            </div>
                         </div>
                     </div>
                     <div>
@@ -124,7 +138,7 @@
                 <h1 class="title">Onde Estamos</h1>
 
                 <div class="local">
-                    <img class="local-photo" alt="Entrada da Chocolateria da Isa">
+                    <img class="local-photo" src="./assets/images/chocolateria/local.webp" alt="Vista lateral da entrada da Chocolateria da Isa. Localizada em uma esquina, a confeitaria apresenta uma pequena vegetação em sua entrada, assim como uma placa mostrando a sua logo.">
                     <div class="local-description">
                         <p>Estamos localizados na Avenida Antonio Frederico nº 2190. <br>
                             Bairro Jardim Universitário <br>
@@ -133,7 +147,10 @@
                         Pontos de referência: <br>
                         Em frente ao Colégio Celtas, perto da Rodovia Euclides da Cunha.</p>
                         
-                        <a href="https://www.google.com.br/maps/place/Chocolateria+da+Isa/@-20.4151091,-49.960256,17z/data=!3m1!4b1!4m6!3m5!1s0x94bd5985c33ecc01:0xf5e5d15c964caf11!8m2!3d-20.4151141!4d-49.9576811!16s%2Fg%2F11pcnfwfq1?entry=ttu" target="_blank"><button class="local-btn">Venha até nós!</button></a>
+                        <a class="local-btn" href="https://www.google.com.br/maps/place/Chocolateria+da+Isa/@-20.4151091,-49.960256,17z/data=!3m1!4b1!4m6!3m5!1s0x94bd5985c33ecc01:0xf5e5d15c964caf11!8m2!3d-20.4151141!4d-49.9576811!16s%2Fg%2F11pcnfwfq1?entry=ttu" target="_blank">
+                            <img id="local-pin" src="./assets/images/icons/pin.webp" alt="Pin de localização">
+                            Venha até nós!
+                        </a>
                     </div>
                 </div>
             </section>
@@ -146,50 +163,50 @@
                         <div class="menu-superior">
                             <h3 class="menu-title">Cardápio de Natal</h3>
                             <picture>
-                                <img src="./assets/images/icons/christmas.webp"" alt="Árvore de Natal">
+                                <img src="./assets/images/icons/christmas.webp" alt="Árvore de Natal">
                             </picture>
                         </div>
-                        <a href="https://drive.google.com/file/d/1gtZnmrJWAU9mjin65TcW-kLcMWA9_Mnn/view" target="_blank"><button class="menu-btn">Conhecer</button></a>
+                        <a class="menu-btn" href="https://drive.google.com/file/d/1gtZnmrJWAU9mjin65TcW-kLcMWA9_Mnn/view" target="_blank">Conhecer</a>
                     </div>
 
                     <div id="menu2" class="menu-section">
                         <div class="menu-superior">
                             <h3 class="menu-title">Cardápio de Bolos</h3>
                             <picture>
-                                <img src="./assets/images/icons/cake.webp"" alt="Bolo">
+                                <img src="./assets/images/icons/cake.webp" alt="Bolo">
                             </picture>
                         </div>
-                        <a href="https://drive.google.com/file/d/1Cei368l51VFYNNLvvnFHAXO5sTLbNR5g/view" target="_blank"><button class="menu-btn">Conhecer</button></a>
+                        <a class="menu-btn" href="https://drive.google.com/file/d/1Cei368l51VFYNNLvvnFHAXO5sTLbNR5g/view" target="_blank">Conhecer</a>
                     </div>
 
                     <div id="menu3" class="menu-section">
                         <div class="menu-superior">
                             <h3 class="menu-title">Cardápio de Sobremesas</h3>
                             <picture>
-                                <img src="./assets/images/icons/sweet.webp"" alt="Brigadeiro">
+                                <img src="./assets/images/icons/sweet.webp" alt="Brigadeiro">
                             </picture>
                         </div>
-                        <a href="https://drive.google.com/file/d/19JwkQUPYvmxQ95jr8VFXXPQ2lGnvPToZ/view" target="_blank"><button class="menu-btn">Conhecer</button></a>
+                        <a class="menu-btn" href="https://drive.google.com/file/d/19JwkQUPYvmxQ95jr8VFXXPQ2lGnvPToZ/view" target="_blank">Conhecer</a>
                     </div>
 
                     <div id="menu4" class="menu-section">
                         <div class="menu-superior">
                             <h3 class="menu-title">Cardápio de Refeições</h3>
                             <picture>
-                                <img src="./assets/images/icons/lunch.webp"" alt="Bandeja de garçom com tampa">
+                                <img src="./assets/images/icons/lunch.webp" alt="Bandeja de garçom com tampa">
                             </picture>
                         </div>
-                        <a href="https://drive.google.com/file/d/1a526z8E5nAH61QjeZ40NvAA07YNMmN4f/view" target="_blank"><button class="menu-btn">Conhecer</button></a>
+                        <a class="menu-btn" href="https://drive.google.com/file/d/1a526z8E5nAH61QjeZ40NvAA07YNMmN4f/view" target="_blank">Conhecer</a>
                     </div>
 
                     <div id="menu5" class="menu-section">
                         <div class="menu-superior">
                             <h3 class="menu-title">Cardápio de Personalizados</h3>
                             <picture>
-                                <img src="./assets/images/icons/personalizados.webp"" alt="Lista de desejos com um coração">
+                                <img src="./assets/images/icons/personalizados.webp" alt="Lista de desejos com um coração">
                             </picture>
                         </div>
-                        <a href="https://drive.google.com/file/d/1BKJ0yYKw2qbKgq1XlgUVeIwIaLjbcnJP/view" target="_blank"><button class="menu-btn">Conhecer</button></a>
+                        <a class="menu-btn" href="https://drive.google.com/file/d/1BKJ0yYKw2qbKgq1XlgUVeIwIaLjbcnJP/view" target="_blank">Conhecer</a>
                     </div>
                 </div>
             </section>
