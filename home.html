@@ -66,39 +66,27 @@
             <div class="carousel-container">
                 <div id="ads" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <div class="carousel-indicators">
-                        <button class="active" data-bs-target="#ads" data-bs-slide-to="0" style="background-color: #c32e42; padding-block: 1px;"></button>
-                        <button class="" data-bs-target="#ads" data-bs-slide-to="1" style="background-color: #c32e42; padding-block: 1px;"></button>
-                        <button class="" data-bs-target="#ads" data-bs-slide-to="2" style="background-color: #c32e42; padding-block: 1px;"></button>
-                        <button class="" data-bs-target="#ads" data-bs-slide-to="3" style="background-color: #c32e42; padding-block: 1px;"></button>
+                        <button class="active" data-bs-target="#ads" data-bs-slide-to="0" aria-label="Primeira imagem da chocolateria" style="background-color: #c32e42; padding-block: 1px;"></button>
+                        <button class="" data-bs-target="#ads" data-bs-slide-to="1" aria-label="Segunda imagem da chocolateria" style="background-color: #c32e42; padding-block: 1px;"></button>
+                        <button class="" data-bs-target="#ads" data-bs-slide-to="2" aria-label="Imagem da produção" style="background-color: #c32e42; padding-block: 1px;"></button>
+                        <button class="" data-bs-target="#ads" data-bs-slide-to="3" aria-label="Imagem da atendente" style="background-color: #c32e42; padding-block: 1px;"></button>
+                        <button class="" data-bs-target="#ads" data-bs-slide-to="4" aria-label="Imagem da festa personalizada" style="background-color: #c32e42; padding-block: 1px;"></button>
                     </div>
                     <div class="carousel-inner">
-                        <div class="carousel-item carousel-image active">
-                            <div class="d-flex justify-content-center h-100">
-                                <img class="cover-image" src="./assets/images/chocolateria/Photo1.webp" alt="Uma chocolateria com visual agradável e simpático, uma vista direta para as estufas onde estão os doces e salgados. O ambiente é limpo e aconchegante, com pequenas mesas que te convidam a tomar um café e apreciar a decoração simples e bonita de borboletas" class="d-block w-100">
-                            </div>
+                        <div class="carousel-item carousel-image active bg-img-1">
+                            <img class="hidden" src="./assets/images/chocolateria/Photo1.webp" alt="Uma chocolateria com visual agradável e simpático, uma vista direta para as estufas onde estão os doces e salgados. O ambiente é limpo e aconchegante, com pequenas mesas que te convidam a tomar um café e apreciar a decoração simples e bonita de borboletas" class="d-block w-100">
                         </div>
-                        <div class="carousel-item carousel-image">
-                            <div class="carousel-content">
-                                <p class="carousel-principal-text"><em>Atendimento e encomendas de qualidade única!</em></p>
-                                <p class="carousel-second-text">Você definitivamente não se arrependeria de experimentar...</p>
-                            </div>
-                            <div class="d-flex justify-content-center h-100">
-                                <img class="cover-image" src="./assets/images/chocolateria/Photo1Blur.webp" alt="Mesma imagem anterior, com efeito borrado" class="d-block w-100">
-                            </div>
+                        <div class="carousel-item carousel-image bg-img-2">
+                            <img class="hidden" src="./assets/images/chocolateria/Photo2.webp" alt="Outra vista da chocolateria, mostrando o canto com um sofá aconchegante debaixo da logo da empresa, com luminárias de borboletas por perto." class="d-block w-100">
                         </div>
-                        <div class="carousel-item carousel-image">
-                            <div class="d-flex justify-content-center h-100">
-                                <img class="cover-image" src="./assets/images/chocolateria/Photo2.webp" alt="Outra vista da chocolateria, mostrando o canto com um sofá aconchegante debaixo da logo da empresa, com luminárias de borboletas por perto.S" class="d-block w-100">
-                            </div>
+                        <div class="carousel-item carousel-image bg-img-3">
+                            <img class="hidden" src="./assets/images/chocolateria/production.webp" alt="Isa, dona da chocolateria, segurando um doce personalizado da Minnie em primeiro plano, estando diversos doces iguais juntamente com trufas da minnie em segundo plano." class="d-block w-100">
                         </div>
-                        <div class="carousel-item carousel-image">
-                            <div class="carousel-content">
-                                <p class="carousel-principal-text"><em>A melhor escolha para o seu dia está aqui.</em></p>
-                                <p class="carousel-second-text">Para o seu almoço, a sua tarde ou a sua festa, para o que você quiser!</p>
-                            </div>
-                            <div class="d-flex justify-content-center h-100">
-                                <img class="cover-image" src="./assets/images/chocolateria/Photo2Blur.webp" alt="Mesma imagem anterior, com efeito borrado" class="d-block w-100">
-                            </div>
+                        <div class="carousel-item carousel-image bg-img-4">
+                            <img class="hidden" src="./assets/images/chocolateria/adria.webp" alt="Atendente alegremente entregando a encomenda da cliente." class="d-block w-100">
+                        </div>
+                        <div class="carousel-item carousel-image bg-img-5">
+                            <img class="hidden" src="./assets/images/chocolateria/party.webp" alt="Festa com doces personalizados, tematizados com o tema magia. Na imagem estão presentes pipoca gourmet, pirulitos personalizados com pasta americana, brigadeiros, beijinhos, casadinhos e pães de mel personalizados com pasta americana." class="d-block w-100">
                         </div>
                     </div>
                     <div>
@@ -114,13 +102,21 @@
                 </div>
             </div>
 
-            <section id="arrow-id">
-                <div id="arrow"></div>
+            
+            <section id="text-below-carousel">
+                <div class="text">
+                    <h1>Atendimentos e encomendas de qualidades únicas!</h1>
+                    <p>Você definitivamente não se arrependeria de experimentar nossos produtos...</p>
+                </div>
+                <div class="text">
+                    <h1>Você encontra a melhor escolha para o seu dia aqui.</h1>
+                    <p>Para o seu almoço, a sua tarde ou até a sua festa, para o que você quiser!</p>
+                </div>
             </section>
 
 
             <section id="nossa-historia">
-                <h1 class="title">Nossa História</h1>
+                <h2 class="title">Nossa História</h2>
                 <div class="history">
                     <div class="isa">
                         <img id="image-isa" src="./assets/images/chocolateria/Isa.webp" alt="Criadora da marca, Isabela Fernandes Rodrigues sorrindo tomando um café, com uma edição de uma bela coroa brilhante sobre a sua cabeça.">
@@ -135,14 +131,10 @@
 
 
             <section id="onde-estamos">
-                <h1 class="title">Onde Estamos</h1>
+                <h2 class="title">Onde Estamos</h2>
 
                 <div class="local">
-<<<<<<< HEAD
-                    <img class="local-photo" src="./assets/images/chocolateria/local.webp" alt="Vista lateral da entrada da Chocolateria da Isa. Localizada em uma esquina, a confeitaria apresenta uma pequena vegetação em sua entrada, assim como uma placa mostrando a sua logo.">
-=======
                     <img src="./assets/images/chocolateria/local.webp" class="local-photo" alt="Visão lateral da Chocolateria da Isa. Localizada em uma esquina, a entrada apresenta uma vegetação simples e bonita do lado de fora. Lonas vermelhas, juntamente com a placa da logo da empresa, chamam bastante atenção para o local.">
->>>>>>> fc8ca3c (the text over carousel isn't working, may place it below)
                     <div class="local-description">
                         <p>Estamos localizados na Avenida Antonio Frederico nº 2190. <br>
                             Bairro Jardim Universitário <br>
@@ -152,13 +144,8 @@
                         Em frente ao Colégio Celtas, perto da Rodovia Euclides da Cunha.</p>
                         
                         <a class="local-btn" href="https://www.google.com.br/maps/place/Chocolateria+da+Isa/@-20.4151091,-49.960256,17z/data=!3m1!4b1!4m6!3m5!1s0x94bd5985c33ecc01:0xf5e5d15c964caf11!8m2!3d-20.4151141!4d-49.9576811!16s%2Fg%2F11pcnfwfq1?entry=ttu" target="_blank">
-<<<<<<< HEAD
                             <img id="local-pin" src="./assets/images/icons/pin.webp" alt="Pin de localização">
-                            Venha até nós!
-=======
-                            <img src="./assets/images/icons/pin.webp" height="30" alt="Pin de localização">
                             <em>Venha até nós!</em>
->>>>>>> fc8ca3c (the text over carousel isn't working, may place it below)
                         </a>
                     </div>
                 </div>
@@ -224,15 +211,15 @@
 
         <footer>
             <section id="contate-nos">
-                <h1 class="footer-title">Contate-nos!</h1>
+                <h2 class="footer-title">Contate-nos!</h2>
                 <div class="contact-section">
                     <picture>
                         <img class="footer-logo" src="./assets/images/chocolateria/logo.webp" alt="Logo da Chocolateria da Isa">
                     </picture>
                     <div class="contact">
                         <div class="contact-text">
-                            <header><h2 class="catchy">Gostou? <br>
-                                Então vem com a gente!</h2></header>
+                            <header><h3 class="catchy">Gostou? <br>
+                                Então vem com a gente!</h3></header>
                             <p>De segunda a Sexta das 7h às 18:30 <br>
                                 E de Sábado das 8h às 18h</p>
                         </div>
